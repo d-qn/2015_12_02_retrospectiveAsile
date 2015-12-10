@@ -2,7 +2,6 @@ library(eurostat)
 library(dplyr)
 library(magrittr)
 
-
 ######      This download the very large monthly asylum data with country of origin!
 dataID <- "migr_asyappctzm"
 
@@ -10,7 +9,6 @@ data_2015.file <- "data/data_2015only.csv"
 data.sub.file <- "input/data.csv"
 data.topOrigins.dw.file <- "output/top2015_asylumOrigins.csv"
 data.origins_ts.file <- "input/orgin2015_ts.csv"
-
 
 ############################################################################################
 ###		Get data
@@ -36,10 +34,12 @@ data %<>% filter(time >= as.Date("2015-01-01"))
 write.csv(data, file = data_2015.file, row.names = F)
 
 # consider only the months with full data (with NA less than 5%) !!
+# consider only the months with full data (with NA less than 5%) !!
 times <- round(tapply(data$values, data$time, function(v) (sum(is.na(v))/length(v)) ) * 100)
 cat("% of missing country data by month\n", times)
 max.date <- max(as.Date(names(times)[times < 5]))
-cat("Month until no missing data\n", as.character(max.date))
+cat("Month until no missing data\n", as.character(max.date), " filter missing data months")
+data %<>% filter(time <= as.Date(max.date))
 
 	### CHECK ###
 ## check CH value with http://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=migr_asyappctzm&lang=en
@@ -65,9 +65,8 @@ data %<>% filter(!citizen %in% citToRemove)
 
 
 ### Get the top country of origins and destinations
-
 # find the n largest countries during the last year
-ntop <- 6
+ntop <- 7
 
 sumByGeo <- data %>% group_by(iso2) %>% dplyr::summarise(sumByGeo = sum(tot, na.rm = T)) %>% ungroup()
 iso2.top <- as.character(unlist(head(as.data.frame(sumByGeo[order(sumByGeo$sumByGeo, decreasing = T),'iso2']), ntop)))
@@ -119,34 +118,15 @@ write.csv(sum_sofar, file = "input/sum_sofar.csv", row.names = F)
 
 
 ############################################################################################
-###		2. Reshape: filter, aggregate for datawrapper charts of all country of origins.
-############################################################################################
-
-###		Aggregate data by geo & citizen
-# d2 <- data.all %>% filter(!citizen %in% citizenAgg, iso2 == "TOTAL") %>%
-#   group_by(iso2, geo, citizen) %>% dplyr::summarise(tot = sum(values, na.rm = T )) %>% ungroup()
-#
-# # remove coutry of origin always 0
-# citToRemove2 <- as.character(unlist(d2 %>% group_by(citizen) %>% dplyr::summarise(grandTot = sum(tot, na.rm = T)) %>% filter(grandTot == 0) %>% select(citizen)))
-# d2 %<>% filter(!citizen %in% citToRemove2)
-#
-# # get the top country of origins
-# dw <- as.data.frame(head(d2 %>% arrange(desc(tot)) %>% select(citizen, tot), 14))
-#
-# # hack to rename Kosovo!
-# dw$citizen <- gsub(" \\(.*\\)$", "", dw$citizen)
-#
-# write.csv(dw, file = data.topOrigins.dw.file, row.names = F)
-
-############################################################################################
-###		3. Reshape: filter, aggregate for datawrapper charts of all country of origins as a timeseries
+###		2. Reshape: filter, aggregate for datawrapper charts of all country of origins as a timeseries
 ############################################################################################
 
 nTopcit <- 14
 ds <- data_all %>% filter(iso2 == "TOTAL", !citizen %in% citizenAgg, time <= max.date) %>% select(citizen, time, values)
 
 # remove citizen always 0
-citNULL <- ds %>% group_by(citizen) %>% summarise(citsum = sum(values)) %>% ungroup() %>% filter(citsum == 0) %>% select(citizen) %>% unlist() %>% as.character()
+citNULL <- ds %>% group_by(citizen) %>% dplyr::summarise(citsum = sum(values)) %>% ungroup() %>%
+  filter(citsum == 0) %>% select(citizen) %>% unlist() %>% as.character()
 ds %<>% filter(!citizen %in% citNULL )
 
 
@@ -161,7 +141,7 @@ ds_nonmerged <- ds
 
 ds$citizen <- ifelse(as.character(ds$citizen) %in% topOrigins, as.character(ds$citizen), 'Other countries')
 
-ds %<>% group_by(citizen, time) %>% summarise(value = sum(values, na.rm = T))
+ds %<>% group_by(citizen, time) %>% dplyr::summarise(value = sum(values, na.rm = T))
 ds$citizen <- gsub(" \\(.*\\)$", "", ds$citizen)
 
 # write data
@@ -169,6 +149,4 @@ write.csv(ds, file = data.origins_ts.file, row.names = F)
 
 labels <- unique(ds$citizen)
 write.csv(data.frame(code = paste0("code.", gsub(" ", "", labels)), en = labels), file = "input/translationStream_tmp.csv", row.names = F)
-
-
 

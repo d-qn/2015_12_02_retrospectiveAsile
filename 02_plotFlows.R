@@ -7,10 +7,8 @@ library(swiRcharts)
 data.sub.file <- "input/data.csv"
 translation.file <- "input/translation_asylumFlowsEU.csv"
 
-
 df <- read.csv(data.sub.file)
 txt <- read.csv(translation.file, row.names = 1, stringsAsFactors = F)
-
 
 for(lang in colnames(txt)) {
   dd <- df
@@ -54,12 +52,11 @@ for(lang in colnames(txt)) {
     source = paste0(txt["source",lang], ": ",
       htmlLink("http://ec.europa.eu/eurostat/en/web/products-datasets/-/MIGR_ASYAPPCTZM",
       txt["eurostat",lang])),
-    author = paste0("Duc-Quang Nguyen | ",
+    author = paste0(txt["credit",lang], ": ",
+      htmlLink("https://github.com/timelyportfolio/parsetR", "parsetR"), " | ",
       htmlLink("http://www.swissinfo.ch", "swissinfo.ch")),
     footer = paste0("<strong>",
       txt["footer.title",lang], "</strong><br>", txt["footer",lang])
   )
 }
-
-
 

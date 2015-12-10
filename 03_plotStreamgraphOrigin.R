@@ -56,7 +56,7 @@ for(lang in colnames(txt)) {
       )
     ),
     author = paste0(txt["credit",lang], ": ",
-      htmlLink("https://github.com/hrbrmstr/streamgraph", "streamgraphR"))
+      htmlLink("https://github.com/hrbrmstr/streamgraph", "streamgraphR"), " | ",
+      htmlLink("http://www.swissinfo.ch", "swissinfo.ch"))
     )
-
 }
