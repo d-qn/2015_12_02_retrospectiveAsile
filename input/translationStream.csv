@@ -1,0 +1,23 @@
+code,en,fr,de,it,pt,ar,ru,es,ja,zh
+title,,Demandes d'asile mensuelles en Europe par pays d'origine,,,,,,,,
+descr,,Nombre mensuel de requérants ayant déposé une demande d'asile pour la première fois en Europe. Placez votre curseur ou tapotez sur une région du graphique pour voir les chiffres exacts d'un pays.,,,,,,,,
+subtitle,,Janvier 2008 – septembre 2015,,,,,,,,
+select,,Pays d'origine:,,,,,,,,
+source,source,source,Quelle,Fonte,fonte,المصدر,Источник:,Fuente,出典,来源
+eurostat,Eurostat,Eurostat,Eurostat,Eurostat,Eurostat,مكتب الإحصاء بالإتحاد الأوروبي ,Евростат,Eurostat,EU統計局,Eurostat
+credit,code,code,,,,,,,,
+code.Afghanistan,Afghanistan,Afghanistan,,,,,,,,
+code.Albania,Albania,Albanie,,,,,,,,
+code.Bangladesh,Bangladesh,Bangladesh,,,,,,,,
+code.Eritrea,Eritrea,Erythrée,,,,,,,,
+code.Georgia,Georgia,Géorgie,,,,,,,,
+code.Iran,Iran,Iran,,,,,,,,
+code.Iraq,Iraq,Iraq,,,,,,,,
+code.Kosovo,Kosovo,Kosovo,,,,,,,,
+code.Nigeria,Nigeria,Nigéria,,,,,,,,
+code.Othercountries,Other countries,Autres pays,,,,,,,,
+code.Pakistan,Pakistan,Pakistan,,,,,,,,
+code.Russia,Russia,Russie,,,,,,,,
+code.Serbia,Serbia,Serbie,,,,,,,,
+code.Somalia,Somalia,Somalie,,,,,,,,
+code.Syria,Syria,Syrie,,,,,,,,

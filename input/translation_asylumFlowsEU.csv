@@ -10,6 +10,7 @@ origins,Countries of origin,Pays d'origine,Herkunftsländer,Paesi di provenienza
 destinations,Destination countries,Pays de destination,Zielländer,Paesi di destinazione,Países de destino,بلدان الوجهة ,"Страны, куда прибывают беженцы",Países de destino,難民の受け入れ国,目的地国
 source,source,source,Quelle,Fonte,fonte,المصدر,Источник:,Fuente,出典,来源
 eurostat,Eurostat,Eurostat,Eurostat,Eurostat,Eurostat,مكتب الإحصاء بالإتحاد الأوروبي ,Евростат,Eurostat,EU統計局,Eurostat
+credit,code,,,,,,,,,
 code.Afghanistan,Afghanistan,Afghanistan,Afghanistan,Afghanistan,Afeganistão,أفغانستان ,Афганистан,Afganistán,アフガニスタン,阿富汗
 code.Albania,Albania,Albanie,Albanien,Albania,Albânia,ألبانيا ,Албания,Albania,アルバニア,阿尔巴尼亚
 code.Eritrea,Eritrea,Erythrée,Eritrea,Eritrea,Eritréia,اريتريا ,Эритрея,Eritrea,エリトリア,厄立特里亚
@@ -26,3 +27,5 @@ code.Italy,Italy,Italie,Italien,Italia,Itália,إيطاليا ,Италия,Ital
 code.OtherEuropeancountries,Other European countries,Autres pays européens,Andere europ. Länder,Altri paesi europei,Outros países europeus,بلدان أوروبية أخرى,Другие страны Европы,Otros pases europeos,その他のヨーロッパ諸国,其他欧洲国家
 code.Sweden,Sweden,Suède,Schweden,Svezia,Suécia,السويد,Швеция,Suecia,スウェーデン,瑞典
 code.UnitedKingdom,United Kingdom,Royaume-Uni,Grossbritannien,Regno Unito,Reino Unido,المملكة المتحدة,Великобритания,Reino Unido,イギリス,英国
+,,,,,,,,,,
+,,Janvi – Sept 2015,,,,,,,,
