@@ -1,23 +1,23 @@
 code,en,fr,de,it,pt,ar,ru,es,ja,zh
-title,,Demandes d'asile mensuelles en Europe par pays d'origine,,Domande d'asilo mensili in Europa per paese d'origine,,,,,,
-descr,,Nombre mensuel de requérants ayant déposé une demande d'asile pour la première fois en Europe. Placez votre curseur ou tapotez sur une région du graphique pour voir les chiffres exacts d'un pays d'origine en fonction du temps.,,Numero mensile di richiedenti che hanno depositato una domanda d’asilo per la prima volta in Europa. Fate scorrere il mouse su uno dei paesi illustrati nel grafico per vedere le cifre esatte in funzione del tempo.,,,,,,
-subtitle,,Janvier 2008 – septembre 2015,,Gennaio 2008 - settembre 2015,,,,,,
-select,,Pays d'origine:,,Paesi d'origine,,,,,,
+title,Monthly asylum requests in Europe by country of origin,Demandes d'asile mensuelles en Europe par pays d'origine,"Asylgesuche in Europa pro Monat, nach Herkunftsland",Domande d'asilo mensili in Europa per paese d'origine,Pedidos de asilo mensais na Europa por país de origem,طلبات اللجوء الشهرية في أوروبا حسب البلد الأصلي ,Заявления о предоставлении убежища в Европе ежемесячно по странам происхождения,Solicitudes de asilo mensuales en Europa por país de origen,出身国別に見た欧州における月ごとの難民申請者数,欧洲每月接收的难民申请数量(按原籍国计算)
+descr,Monthly total of people filing asylum requests for the first time in Europe. Place your cursor on or click on a part of the graphic to see the exact figures of a country of origin at a particular time. ,Nombre mensuel de requérants ayant déposé une demande d'asile pour la première fois en Europe. Placez votre curseur ou tapotez sur une région du graphique pour voir les chiffres exacts d'un pays d'origine à un moment donné.,"Monatliche Anzahl Bewerber, die erstmals in Europa einen Asylantrag eingereicht haben. Fahren Sie mit dem Cursor darüber oder klicken Sie eine Region an, um die genauen Zahlen eines Herkunftslandes im Lauf der Zeit zu sehen.",Numero mensile di richiedenti che hanno depositato una domanda d’asilo per la prima volta in Europa. Fate scorrere il mouse su uno dei paesi illustrati nel grafico per vedere le cifre esatte in funzione del tempo.,Número mensal de candidatos que entraram com um pedido de asilo pela primeira vez na Europa. Coloque o cursor ou clique em um gráfico para ver o número exato de um país ao longo do tempo.,العدد الشهري لطالبي اللجوء الذين قدموا طلبهم للمرة الأولى في أوروبا. اضغط على منطقة معينة في الرسم البياني للتعرف على الأرقام المضبوطة الخاصة بالبلد الأصلي حسب التواريخ,"Ежемесячное число претендентов, впервые подавших ходатайства о предоставлении убежища в Европе. Наведите курсор или нажмите на график, чтобы увидеть точные долговременное данные по странам происхождения и прибытия вынужденных мигрантов.",Número mensual de solicitantes que han presentado una demanda de asilo por primera vez en Europa. Coloque el cursor o pulse sobre una región del gráfico para ver las cifras exactas de un país de origen en función del tiempo,欧州で初めて難民申請をした人の数（月ごと）。グラフ上にカーソルを合わせるかグラフ下の出身国名を選択すると、出身国別の申請者数が見られます。,按月计算的、首次向欧洲国家递交难民申请的人员数量。移动鼠标至图表各个区域，或点击选择原籍国，您可以看到来自所选国的、不同时间点上的具体难民申请人数。
+subtitle,January 2008 - September 2015,Janvier 2008 – septembre 2015,Januar 2008 – September 2015,Gennaio 2008 - settembre 2015,Janeiro de 2008 - setembro 2015,يناير 2008 - سبتمبر 2015,Январь 2008 - сентябрь 2015 гг.,Enero 2008 - septiembre 2015,2008年1月～2015年9月,2008年1月-2015年9月
+select,Country of origin,Pays d'origine:,Herkunftsland:,Paesi d'origine,País de origem:,البلد الأصلي:,Страна происхождения,País de origen,出身国,原籍国
 source,source,source,Quelle,Fonte,fonte,المصدر,Источник:,Fuente,出典,来源
-eurostat,Eurostat,Eurostat,Eurostat,Eurostat,Eurostat,مكتب الإحصاء بالإتحاد الأوروبي ,Евростат,Eurostat,EU統計局,Eurostat
-credit,code,code,,Codice,,,,,,
-code.Afghanistan,Afghanistan,Afghanistan,,Afghanistan,,,,,,
-code.Albania,Albania,Albanie,,Albania,,,,,,
-code.Bangladesh,Bangladesh,Bangladesh,,Bangladesh,,,,,,
-code.Eritrea,Eritrea,Erythrée,,Eritrea,,,,,,
-code.Georgia,Georgia,Géorgie,,Georgia,,,,,,
-code.Iran,Iran,Iran,,Iran,,,,,,
-code.Iraq,Iraq,Iraq,,Irak,,,,,,
-code.Kosovo,Kosovo,Kosovo,,Kosovo,,,,,,
-code.Nigeria,Nigeria,Nigéria,,Nigeria,,,,,,
-code.Othercountries,Other countries,Autres pays,,Altri paesi,,,,,,
-code.Pakistan,Pakistan,Pakistan,,Pakistan,,,,,,
-code.Russia,Russia,Russie,,Russia,,,,,,
-code.Serbia,Serbia,Serbie,,Serbia,,,,,,
-code.Somalia,Somalia,Somalie,,Somalia,,,,,,
-code.Syria,Syria,Syrie,,Siria,,,,,,
+eurostat,Eurostat,Eurostat,Eurostat,Eurostat,Eurostat,المكتب الإحصائي للإتحاد الأوروبي,Евростат,Eurostat,EU統計局,Eurostat
+credit,code,code,Code,Codice,código,الرمز,Код,código,コード,代码
+code.Afghanistan,Afghanistan,Afghanistan,Afghanistan,Afghanistan,Afeganistão,أفغانستان,Афганистан,Afganistán,アフガニスタン,阿富汗
+code.Albania,Albania,Albanie,Albanien,Albania,Albânia,ألبانيا,Албания,Albania,アルバニア,阿尔巴尼亚
+code.Bangladesh,Bangladesh,Bangladesh,Bangladesch,Bangladesh,Bangladesh,بنغلاديش,Бангладеш,Bangladés,バングラデシュ,孟加拉国
+code.Eritrea,Eritrea,Erythrée,Eritrea,Eritrea,Eritreia,إريتريا,Эритрея,Eritrea,エリトリア,厄立特里亚
+code.Georgia,Georgia,Géorgie,Georgia,Georgia,Georgia,جورجيا,Грузия,Georgia,ジョージア,格鲁吉亚
+code.Iran,Iran,Iran,Iran,Iran,Irã,إيران,Иран,Irán,イラン,伊朗
+code.Iraq,Iraq,Iraq,Irak,Irak,Iraque,العراق,Ирак,Irak,イラク,伊拉克
+code.Kosovo,Kosovo,Kosovo,Kosovo,Kosovo,Kosovo,كوسوفو,Косово,Kosovo,コソボ,科索沃
+code.Nigeria,Nigeria,Nigéria,Nigeria,Nigeria,Nigéria,نيجيريا,Нигерия,Nigeria,ナイジェリア,尼日利亚
+code.Othercountries,Other countries,Autres pays,Andere Länder,Altri paesi,outros países,بلدان أخرى,Другие страны,Otros países,その他の国,其他国家
+code.Pakistan,Pakistan,Pakistan,Pakistan,Pakistan,Paquistão,باكستان,Пакистан,Pakistán,パキスタン,巴基斯坦
+code.Russia,Russia,Russie,Russland,Russia,Rússia,روسيا,Россия,Rusia,ロシア,俄罗斯
+code.Serbia,Serbia,Serbie,Serbien,Serbia,Sérvia,صربيا,Сербия,Serbia,セルビア,塞尔维亚
+code.Somalia,Somalia,Somalie,Somalia,Somalia,Somália,الصومال,Сомали,Somalia,ソマリア,索马里
+code.Syria,Syria,Syrie,Syrien,Siria,Síria,سوريا,Сирия,Siria,シリア,叙利亚
